@@ -18,7 +18,7 @@ set /p choice=  ?
 if %choice% == 1 set hei=1920 && set wdh=1080
 if %choice% == 2 set hei=1280 && set wdh=720 
 if %choice% == 3 set hei=852 && set wdh=480 
-build.cmd %FNAME% %IP% %hei% %wdh%
+cmd /c build.cmd %FNAME% %IP% %hei% %wdh%
 msg "%username%" Building completed.
 
 
